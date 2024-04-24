@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.login-container {
+  background-image: url('./Assets/Background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9; 
+}
+
+.login-content {
+  background-color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-in-button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #333;
+}
+
+.sign-up-text {
+  color: gray;
+  font-size: 14px;
+}
+
+.sign-up-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  text-decoration: underline;
+}
+.create-account-text{
+  color:grey;
+}
+.signup-container {
+  background-image: url('./Assets/Background.jpg'); /* Replace 'background.jpg' with your background image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9; /* Adjust opacity as needed */
+}
+
+.signup-content {
+  background-color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.show-password-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: grey;
+  cursor: pointer;
+}
+.sign-up-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover {
+  background-color: #333;
+}
+
+.already-have-account-text {
+  color: grey;
+  font-size: 14px;
+}
+
+.sign-in-btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.sign-in-btn:hover {
+  text-decoration: underline;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.Navlogo img {
+  width: 70px;
+  border-radius: 10px;
+  margin: 0px 20px; 
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 5px 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: grey;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 70vh;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+
+  .nav-links li {
+    margin: 5px 5px;
+  }
+  .carousel {
+    width: 100%;
+    height: 50vh;
+  }
+  .carousel-image {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
