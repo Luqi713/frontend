@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import ImageCarousel from "./Crousle";
 import pic1 from "../Assets/Mens.jpg";
@@ -48,7 +48,11 @@ function Home() {
         <div className="product-list">
           {product.map((item) => (
             <div key={item._id} className="product-card">
+              <a onClick={()=>{
+                Navigate("/view-product",{state: item})
+              }}>  
               <img src={item.imgurl} alt={item.name} />
+              </a>
               <div className="product-details">
                 <p>
                   <p id='name'>{item.name}</p>
